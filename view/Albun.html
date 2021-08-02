@@ -1,0 +1,13 @@
+<div ng-controller="albunController">
+    <div class="row">
+        <div class="col-sm-4 Tarjeta" ng-repeat="img in imagenes">
+            <div class="card">
+                <div class="card-body">
+                    <img src="{{img.thumbnailUrl}}" alt="">
+                    <h4 class="card-title">{{img.title}}</h4>
+                    <h7 class="card-title">{{img.url}}</h7>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

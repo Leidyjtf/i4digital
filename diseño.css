@@ -1,0 +1,114 @@
+/* Menu */
+.navbar{
+    background-color: #194350;
+}
+.navbar-brand-lt{
+    margin-right: 0;
+}
+.navbar-brand-lt a {
+    text-decoration: none;
+    color: #ADB5BD !important;
+    font-weight: bold; 
+}
+.navbar-brand-lt .navbar-collapse .navbar-nav .nav-item a:active{
+    background-color: #FDEFEF;
+}
+.nav-link{
+    color: #ADB5BD;
+}
+.body{
+    margin: 1rem;
+}
+
+/* Home */
+h1{
+    text-align: center;
+    color: #194350;
+}
+.card{
+    transition: all 0.5s linear; 
+}
+.card-group{
+    margin: 30px;
+    
+}
+.card-group img{
+    color: #ADB5BD;
+    height: 360px;
+    border-style:solid;
+    border-top-width: 6px;
+    border-right-width: 4px;
+    border-bottom-width: 6px;
+    border-left-width: 4px;
+}
+.card:hover{
+    transform: scale(0.9);
+}
+
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;..");
+}
+
+/* filtro */
+input{
+    margin: 1rem;
+}
+select{
+    margin-left: 0.7rem;
+}
+
+/* Usuarios*/
+.row{
+    margin: auto;
+}
+.Tarjeta{
+    margin-bottom: 2rem;
+}
+
+.botonU:hover{
+    background-color: #ADB5BD;
+    color: #194350;
+    font-size:large;
+}
+
+/* Albunes */
+a{
+    color: #194350;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* Publicaciones */
+.boton{
+    background-color: #194350;
+    color: #ADB5BD;
+    border-radius: 6%;
+    width:110px;
+    height:34px;
+}
+
+h6{
+    margin-left: 16px;
+}
+
+.card{
+    margin-left: 30px;
+    margin-right: 840px;
+   
+}
+
+/* Pie de pagina */
+footer {
+    color: #ADB5BD;
+    padding:  5px;
+    text-align: center;
+    background-color: #194350;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+.main{
+    height: 1000px;
+}

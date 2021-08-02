@@ -1,0 +1,28 @@
+<div ng-controller="UsuariosController">
+
+    <h1>Usuarios</h1>
+    <br>
+    <!-- filtro -->
+    <select name="propiedad" ng-model="propiedad">
+        <option disabled selected value> -- Seleccione una opción -- </option>
+        <option value="name">Nombre</option>
+        <option value="username">Usuario</option>
+        <option value="email">Correo</option>
+    </select>
+    <input type="text"  placeholder="Filtrar Usuarios" ng-model="filtro" ng-keyup="Buscar()" ng-disabled="!propiedad"/>
+    
+    <br>
+    <!-- Card -->
+    <div class="row">
+        <div class="col-sm-4 Tarjeta" ng-repeat="usu in usuarios">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">{{usu.name}}</h4>
+                    <h6 class="card-title">{{usu.username}}</h6>
+                    <p class="card-text">{{usu.email}}</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

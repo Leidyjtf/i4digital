@@ -1,0 +1,19 @@
+<div ng-controller="AlbunesController">
+    <h1>Álbunes</h1>
+    <br>
+    
+    <div>
+        <div class="row" ng-repeat="alb in albunes">
+            <div class="col-sm-4 Tarjeta" ng-repeat="a in alb track by $index">
+                <a href="#!Albun/{{a.id}}">
+                    <div class="card" >
+                        <div class="card-body">
+                            <h4 class="card-title">Titulo: {{a.title}}</h4>
+                            <h6 class="card-title">Id: {{a.userId}}</h6>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

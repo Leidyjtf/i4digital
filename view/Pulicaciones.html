@@ -1,0 +1,37 @@
+<div ng-controller="PublicacionesController">
+    <h1>Publicaciones</h1>
+    <br>
+    <!-- Formulario -->
+    <form ng-submit="addDat()">
+        <div class="row" >
+            <div class="col-sm-9 Tarjeta">
+                <h6>Los campos marcados con * son obligatorios</h6>
+                <div class="Item1">
+                    <input type="text uno" placeholder="*Name" ng-model="newDat.name" required>
+                    <input type="text" placeholder="*UserName" ng-model="newDat.username" required>
+                    <input type="text" placeholder="*Email" ng-model="newDat.email" >
+                </div>
+                <div class="Item2">
+                    <input type="text" placeholder="address" ng-model="newDat.address">
+                    <input type="text" placeholder="street" ng-model="newDat.street">
+                    <input type="text" placeholder="suite" ng-model="newDat.suite">
+                    <input type="text" placeholder="city" ng-model="newDat.city">
+                    <input type="text" placeholder="zipcode" ng-model="newDat.zipcode">
+                </div>
+                <div class="Item3">
+                    <input type="text" placeholder="geo" ng-model="newDat.geo">
+                    <input type="text" placeholder="lat" ng-model="newDat.lat">
+                    <input type="text" placeholder="lng" ng-model="newDat.lng">
+                    <input type="submit" value="Guardar" class="boton">
+                </div>
+            </div>  
+        </div>
+    </form>
+
+    <!-- Tabla -->
+    <div class="card" ng-repeat="dat in datos">
+        <div class="card-body" >
+            {{dat.name}} -- {{dat.username}} -- {{dat.email}} -- {{dat.address}} -- {{dat.street}} -- {{dat.suite}} -- {{dat.city}} -- {{dat.zipcode}} -- {{dat.geo}} -- {{dat.lat}} -- {{dat.lng}}
+        </div>
+    </div>
+</div>
