@@ -56,6 +56,10 @@ angular.module('PruebaTecnica')
         // Actualizar los datos
         localStorageService.set("angular-puclicacionespt", $scope.datos);
     }
+    $scope.clean = function(){
+        $scope.datos= [];
+        localStorageService.set("angular-puclicacionespt", $scope.datos);
+    }
 
 })
 .controller("UsuariosController", function($scope,$http){
